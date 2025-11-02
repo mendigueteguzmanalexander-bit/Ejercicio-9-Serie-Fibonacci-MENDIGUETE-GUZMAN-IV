@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Serie Fibonacci</title>
+</head>
+<body>
+  <h2>Ejercicio 9: Serie Fibonacci</h2>
+  <script>
+    // Pedimos al usuario cuántos términos desea
+    let n = parseInt(prompt("¿Cuántos términos de la serie Fibonacci deseas ver?"));
+
+    let a = 0, b = 1, c;
+    let serie = "Serie Fibonacci: " + a + ", " + b;
+
+    // Generamos la serie
+    for (let i = 2; i < n; i++) {
+      c = a + b;
+      serie += ", " + c;
+      a = b;
+      b = c;
+    }
+
+    // Mostrar con ALERT
+    alert(serie);
+
+    // Mostrar con CONSOLE.LOG
+    console.log(serie);
+
+    // Mostrar con DOCUMENT.WRITELN
+    document.writeln("<h3>" + serie + "</h3>");
+  </script>
+</body>
+</html>
